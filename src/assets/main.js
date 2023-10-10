@@ -42,7 +42,7 @@ async function fetchData(urlAPI) {
         console.log(videos.items[0].id.videoId);
         let view = `
         ${videos.items.map(video =>  `
-        <a class="videoMusical" onclick="handlerModal('${video.id.videoId}')">
+        <a class="videoMusical cursor-pointer" onclick="handlerModal('${video.id.videoId}')">
           <div class="group relative">
             <div class="w-full bg-gray-200 aspect-w-1 aspect-h-1 rounded-lg overflow-hidden group-hover:opacity-75 lg:aspect-none">
               <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" class="w-full">
